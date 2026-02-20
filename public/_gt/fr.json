@@ -1,0 +1,126 @@
+{
+  "2e61c67477936e8c": "Interface multilingue de réservation d’hôtel illustrant l’internationalisation avec General Translation.",
+  "3f666d3e67291def": " / nuit",
+  "44797d9b073bf3ef": "Il s'agit d'un exemple d'application développée avec General Translation pour illustrer l'internationalisation dans Next.js.",
+  "4479c9c81ab04772": [
+    "Arrivée : ",
+    {
+      "i": 1,
+      "k": "_gt_date_1",
+      "v": "d"
+    }
+  ],
+  "60417b2015734dd1": "Explorez notre sélection de chambres et suites. Les tarifs par nuit, la capacité d'accueil, les dates d'arrivée et la disponibilité sont tous affichés avec un formatage adapté à la locale, propulsé par General Translation.",
+  "8e9f1866e9f9bf33": "Réservation d’hôtel",
+  "97b1f1169c9d811d": {
+    "d": {
+      "b": {
+        "one": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " lit"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "other": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " lits"
+          ],
+          "i": 2,
+          "t": "C2"
+        }
+      },
+      "t": "p"
+    },
+    "i": 1,
+    "t": "Plural"
+  },
+  "b48038ab04e8f4eb": [
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " pi²"
+  ],
+  "d62b1a5eea0f3724": [
+    "Départ : ",
+    {
+      "i": 1,
+      "k": "_gt_date_1",
+      "v": "d"
+    }
+  ],
+  "da7879b32c27b6f6": "Réservation d’hôtel | General Translation",
+  "e02e68aa662d7d51": {
+    "d": {
+      "b": {
+        "one": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " invité"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "other": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " invités"
+          ],
+          "i": 2,
+          "t": "C2"
+        }
+      },
+      "t": "p"
+    },
+    "i": 1,
+    "t": "Plural"
+  },
+  "e0970372f4eb75bd": [
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " chambres listées"
+  ],
+  "e5ccb34799bc19e2": "Voir les chambres",
+  "fd1c754a97d3437c": [
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " disponible(s) actuellement"
+  ],
+  "ffac6d861f0b9dc5": {
+    "d": {
+      "b": {
+        "no": "Complet",
+        "yes": "Disponible"
+      },
+      "t": "b"
+    },
+    "i": 1,
+    "t": "Branch"
+  }
+}
