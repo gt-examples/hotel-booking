@@ -1,114 +1,8 @@
 import { T, Num, Currency, DateTime, Branch, Plural } from "gt-next";
 import { getGT } from "gt-next/server";
-import { LocaleSelector } from "gt-next";
-
-type Room = {
-  id: number;
-  name: string;
-  description: string;
-  rate: number;
-  currency: string;
-  guests: number;
-  beds: number;
-  sqft: number;
-  stars: number;
-  available: boolean;
-  checkIn: string;
-  checkOut: string;
-};
-
-const rooms: Room[] = [
-  {
-    id: 1,
-    name: "Standard Queen",
-    description:
-      "A comfortable room with a queen-size bed, work desk, and city view.",
-    rate: 129,
-    currency: "USD",
-    guests: 2,
-    beds: 1,
-    sqft: 320,
-    stars: 3,
-    available: true,
-    checkIn: "2026-03-15T15:00:00",
-    checkOut: "2026-03-18T11:00:00",
-  },
-  {
-    id: 2,
-    name: "Deluxe King Suite",
-    description:
-      "Spacious suite with a king bed, separate living area, and panoramic windows.",
-    rate: 279,
-    currency: "USD",
-    guests: 2,
-    beds: 1,
-    sqft: 550,
-    stars: 4,
-    available: true,
-    checkIn: "2026-03-20T15:00:00",
-    checkOut: "2026-03-23T11:00:00",
-  },
-  {
-    id: 3,
-    name: "Family Room",
-    description:
-      "Two double beds with a connecting door option, ideal for families traveling with children.",
-    rate: 199,
-    currency: "USD",
-    guests: 4,
-    beds: 2,
-    sqft: 450,
-    stars: 3,
-    available: false,
-    checkIn: "2026-04-01T15:00:00",
-    checkOut: "2026-04-05T11:00:00",
-  },
-  {
-    id: 4,
-    name: "Executive Suite",
-    description:
-      "Premium corner suite with a marble bathroom, minibar, and dedicated concierge service.",
-    rate: 459,
-    currency: "USD",
-    guests: 2,
-    beds: 1,
-    sqft: 720,
-    stars: 5,
-    available: true,
-    checkIn: "2026-03-10T15:00:00",
-    checkOut: "2026-03-14T11:00:00",
-  },
-  {
-    id: 5,
-    name: "Economy Single",
-    description:
-      "Compact and affordable room with a single bed, perfect for solo travelers on a budget.",
-    rate: 79,
-    currency: "USD",
-    guests: 1,
-    beds: 1,
-    sqft: 200,
-    stars: 2,
-    available: true,
-    checkIn: "2026-03-25T15:00:00",
-    checkOut: "2026-03-27T11:00:00",
-  },
-  {
-    id: 6,
-    name: "Penthouse Suite",
-    description:
-      "Top-floor luxury with a private terrace, whirlpool bath, and butler service included.",
-    rate: 899,
-    currency: "USD",
-    guests: 4,
-    beds: 2,
-    sqft: 1200,
-    stars: 5,
-    available: false,
-    checkIn: "2026-05-01T15:00:00",
-    checkOut: "2026-05-07T11:00:00",
-  },
-];
+import Link from "next/link";
+import Header from "@/components/Header";
+import { rooms, Room } from "@/data/rooms";
 
 function StarRating({ stars }: { stars: number }) {
   return (
@@ -151,7 +45,10 @@ function AvailabilityBadge({ available }: { available: boolean }) {
 
 function RoomCard({ room }: { room: Room }) {
   return (
-    <div className="border border-neutral-800 rounded-lg p-5 hover:border-neutral-700 transition-colors">
+    <Link
+      href={`/room/${room.slug}`}
+      className="block border border-neutral-800 rounded-lg p-5 hover:border-neutral-600 transition-colors"
+    >
       <div className="flex items-start justify-between gap-3 mb-3">
         <div className="min-w-0">
           <h3 className="text-base font-semibold text-neutral-100 leading-tight">
@@ -228,7 +125,7 @@ function RoomCard({ room }: { room: Room }) {
           </T>
         </span>
       </div>
-    </div>
+    </Link>
   );
 }
 
@@ -239,43 +136,7 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-neutral-950 font-sans text-neutral-200">
-      <header className="border-b border-neutral-800 bg-neutral-950">
-        <div className="max-w-3xl mx-auto px-6 py-5 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <a
-              href="https://generaltranslation.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-medium text-neutral-400 hover:text-neutral-200 transition-colors"
-            >
-              General Translation
-            </a>
-            <span className="text-neutral-700">/</span>
-            <h1 className="text-sm font-semibold text-neutral-100">
-              {gt("Hotel Booking")}
-            </h1>
-          </div>
-          <div className="flex items-center gap-3">
-            <a
-              href="https://github.com/gt-examples/hotel-booking"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-neutral-400 hover:text-neutral-200 transition-colors"
-              aria-label="View on GitHub"
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-              </svg>
-            </a>
-            <LocaleSelector />
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <main className="max-w-3xl mx-auto px-6 py-12">
         <div className="mb-10">

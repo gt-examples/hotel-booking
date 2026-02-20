@@ -1,6 +1,17 @@
 {
-  "2e61c67477936e8c": "Interface multilingue de réservation d’hôtel illustrant l’internationalisation avec General Translation.",
+  "109bc876d374d85e": "Date de départ",
+  "10ca555c4413704d": "Chambres",
+  "121467021e1e5744": "Date d'arrivée",
+  "13e822b63917a9b8": "Enregistrement",
+  "168f27c3fc977989": "Invités",
+  "1fc9be2a4af01ed1": "Photos de la chambre",
+  "242f2e7fd687720a": "11:00",
+  "25584bb552d34245": "123 Grand Avenue, Downtown District",
+  "2e61c67477936e8c": "Une interface multilingue de réservation d'hôtel illustrant l’internationalisation avec General Translation.",
   "3f666d3e67291def": " / nuit",
+  "43b5e0af741321ee": "Heure de départ",
+  "43caaea518901048": "Équipements de la chambre",
+  "442e78727c55062f": "15 h 00",
   "44797d9b073bf3ef": "Il s'agit d'un exemple d'application développée avec General Translation pour illustrer l'internationalisation dans Next.js.",
   "4479c9c81ab04772": [
     "Arrivée : ",
@@ -10,8 +21,30 @@
       "v": "d"
     }
   ],
-  "60417b2015734dd1": "Explorez notre sélection de chambres et suites. Les tarifs par nuit, la capacité d'accueil, les dates d'arrivée et la disponibilité sont tous affichés avec un formatage adapté à la locale, propulsé par General Translation.",
-  "8e9f1866e9f9bf33": "Réservation d’hôtel",
+  "474774458cbb272c": "Adresse",
+  "5217bee4491b3cc5": "Retour aux chambres",
+  "54b1533db780e117": "Téléphone",
+  "5bfcedef0c87d281": "Heure d'arrivée",
+  "60417b2015734dd1": "Explorez notre sélection de chambres et suites. Les tarifs par nuit, la capacité d'accueil, les dates d'arrivée et les disponibilités sont tous affichés avec un formatage adapté aux paramètres régionaux, propulsé par General Translation.",
+  "641518bf81c5a1ee": "Contact et accès",
+  "721d56441410cf2f": "Réserver cette chambre",
+  "7580a915f91beed5": "Services de l'hôtel",
+  "7ae1769193a1639a": "Lits",
+  "7c2673dd21549456": "Équipements",
+  "7f0a1e2202ff028a": "À propos de l'hôtel",
+  "86930a15b0ba0ebb": "Infos sur cette chambre",
+  "8e9f1866e9f9bf33": "Réservation d'hôtel",
+  "91986f7caa1e0c82": {
+    "d": {
+      "b": {
+        "no": "Indisponible",
+        "yes": "Réserver maintenant"
+      },
+      "t": "b"
+    },
+    "i": 1,
+    "t": "Branch"
+  },
   "97b1f1169c9d811d": {
     "d": {
       "b": {
@@ -45,6 +78,7 @@
     "i": 1,
     "t": "Plural"
   },
+  "9fb2ed0819185fac": "Total estimé",
   "b48038ab04e8f4eb": [
     {
       "i": 1,
@@ -61,7 +95,8 @@
       "v": "d"
     }
   ],
-  "da7879b32c27b6f6": "Réservation d’hôtel | General Translation",
+  "da7879b32c27b6f6": "Réservation d'hôtel | General Translation",
+  "dbd8f9793849a9c6": "Situé au cœur de la ville, notre hôtel allie élégance moderne et hospitalité chaleureuse. Avec six types de chambres distincts, allant de notre économique chambre simple à la somptueuse suite penthouse, nous répondons aux besoins de chaque voyageur.",
   "e02e68aa662d7d51": {
     "d": {
       "b": {
@@ -95,6 +130,7 @@
     "i": 1,
     "t": "Plural"
   },
+  "e081a485bc70b023": "Notre hôtel propose une gamme complète d'équipements conçus pour rendre votre séjour confortable et mémorable. Des installations de bien-être à la gastronomie, tout ce dont vous avez besoin est à portée de main.",
   "e0970372f4eb75bd": [
     {
       "i": 1,
@@ -104,13 +140,15 @@
     " chambres listées"
   ],
   "e5ccb34799bc19e2": "Voir les chambres",
+  "f4e0e70f8b9fef31": "Paiement",
+  "f5d7390e9e3eb081": "Construit à l'origine en 1928 et entièrement rénové en 2024, l'établissement allie le caractère architectural historique au design et aux technologies contemporains. Notre personnel dévoué est disponible 24 h/24 pour garantir une expérience exceptionnelle.",
   "fd1c754a97d3437c": [
     {
       "i": 1,
       "k": "_gt_n_1",
       "v": "n"
     },
-    " disponible(s) actuellement"
+    " actuellement disponible"
   ],
   "ffac6d861f0b9dc5": {
     "d": {
